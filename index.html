@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>UI-Track: PHINMA Student Performance</title>
+       <link href="assets/img/ui.png" rel="icon">
+
+       <!-----=====---- VENDOR CSS FILES ----======----->
+       <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+       <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+       <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+       <!-----=======--- TEMPLATE MAIN CSS FILE ---========-->
+       <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+       <!---------------- ======= HEADER ======= -------------->     
+       <header id="header" class="navbar navbar-expand-lg">
+              <div class="container">
+                  <div class="logo">
+                      <a href="index.html">UI-Track</a>
+                  </div>
+      
+                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                      <i class='bx bx-menu'></i>
+                  </button>
+      
+                  <nav class="collapse navbar-collapse" id="navbarCollapse">
+                      <div class="navbar-nav ms-auto">
+                          <a class="active" href="#home">Home</a>
+                          <a href="#about">About</a>
+                          <a href="#features">Features</a>
+                          <a href="#contact">Contact</a>
+
+                          <li><a href="#about"><p>Get Started</p></a></li>
+                      </div>
+                  </nav>
+              </div>
+       </header><!-- END HEADER -->
+
+       <!---------------- ======= HOME SECTION ======= -------------->
+       <section id="home" class="d-flex align-items-center">
+              <div class="container">
+                     <div class="row">
+                            <div id="home-content" class="col-lg-8 flex-lg-column pt-3 order-2 order-lg-1">
+                                   <div>
+                                          <h1>UI-Track: PHINMA Student Performance</h1>
+                                          <h3>Your solution for simplified student performance tracking within PHINMA UI.</h3>
+                                          <div id="home-buttons">
+                                                 <div id="home-register">
+                                                        <button href="#create" data-bs-toggle="modal" data-bs-target="#CreateAccountModal">Create Account</button>
+                                                 </div>
+
+                                                 <div id="home-login" class="dropdown">
+                                                        <button href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">Login As</button>
+                                                        
+                                                        <ul class="dropdown-menu">
+                                                               <li><a class="dropdown-item" href="Admin/admin.html">Admin</a></li>
+                                                               <li><a class="dropdown-item" href="Users/teacher.html">Teacher</a></li>
+                                                               <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#StudentLoginModal">Student</a></li>
+                                                        </ul>
+                                                 </div>
+                                          </div>
+                                   </div>
+                            </div>
+
+                            <div id="home-img" class="col-lg-8 flex-lg-column order-1 home-img">
+                                   <img src="assets/img/ui.png" class="img-fluid">
+                            </div>
+                     </div>
+              </div>
+       </section><!-- END HOME -->
+
+       <main id="main"><!---------------- ======= MAIN ======= -------------->
+
+              <!---------------- ======= ABOUT SECTION ======= -------------->
+              <section id="about">
+                     <div class="container">
+                            <div class="row">
+                                   <h1>About UI-Track</h1>
+                                   <div class="col-lg-6 order-1 order-lg-2">
+                                          <img src="assets/img/ui2.jpg" class="img-fluid">
+                                   </div>
+
+                                   <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                                          <p>
+                                                 UI-Track: PHINMA Student Performance, the goal of this project is to create a
+                                                 user-friendly system for tracking and managing student performance in the PHINMA educational system. </br> </br>
+                                                 The project aims to improve the educational experience at PHINMA by simplifying the performance tracking
+                                                 process, ultimately contributing to student success and educational excellence.
+                                          </p>
+                                   </div>
+                            </div>
+                     </div>
+              </section><!-- END ABOUT -->
+
+              <!---------------- ======= FEATURES SECTION ======= -------------->
+              <section id="features" class="features">
+                     <div class="container">
+                            <div class="section-title">
+                                   <h1>Key Features</h1>
+                            </div>
+
+                            <div id="features-row" class="row">
+                                   <div class="col-xl-7">
+                                          <div class="content">
+                                                 <div class="row">
+                                                        <div class="col-md-8 icon-box">
+                                                               <i class="bi bi-compass"></i>
+                                                               <h4>Real-Time Tracking</h4>
+                                                               <p>Easily input and update student performance
+                                                                      data for instant tracking.</p>
+                                                        </div>
+                                                        <div class="col-md-8 icon-box">
+                                                               <i class="bi bi-person-badge"></i>
+                                                               <h4>Student Portal</h4>
+                                                               <p>Students can access their academic progress,
+                                                                      resources, and feedback.</p>
+                                                        </div>
+                                                        <div class="col-md-8 icon-box">
+                                                               <i class="bi bi-person-heart"></i>
+                                                               <h4>User-Friendly Interface</h4>
+                                                               <p>Effortlessly navigate the system, enhancing
+                                                                      the user experience.</p>
+                                                        </div>
+                                                 </div>
+                                          </div>
+                                   </div>
+                                   <div class="image col-xl-5">
+                                     <img src="assets/img/ui3.svg">
+                                   </div>
+                            </div>
+                     </div>
+              </section><!-- END FEATURES -->
+
+              <!---------------- ======= CONTACT SECTION ======= -------------->
+              <section id="contact" class="contact">
+                     <div class="container">
+                            <div class="section-title">
+                                   <h1>Contact Us</h1>
+                            </div>
+
+                            <div class="row">
+                                   <div class="col-lg-6">
+                                          <div id="row2" class="row">                    
+                                                 <div class="col-lg-6 info">
+                                                        <i class="bx bx-map"></i>
+                                                        <h4>Address</h4>
+                                                        <p>Rizal St., Iloilo City Proper,<br>Iloilo City, 5000</p>
+                                                 </div>
+                                                 <div class="col-lg-6 info">
+                                                        <i class="bx bx-phone"></i>
+                                                        <h4>Call Us</h4>
+                                                        <p>09630400315<br>09167383825</p>
+                                                 </div>
+                                                 <div class="col-lg-6 info">
+                                                        <i class="bx bx-envelope"></i>
+                                                        <h4>Email Us</h4>
+                                                        <p>rodjhe41@gmail.com<br>daerod3@gmail.com</p>
+                                                 </div>
+                                                 <div class="col-lg-6 info">
+                                                        <i class="bx bx-time-five"></i>
+                                                        <h4>Working Hours</h4>
+                                                        <p>Mon - Fri: 9AM to 5PM<br>Sunday: 9AM to 1PM</p>
+                                                 </div>
+                                          </div> 
+                                   </div>
+                                   <div class="col-lg-6">
+                                          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                                 <div class="form-group">
+                                                        <input placeholder="Your Name" type="text" name="name" class="form-control" id="name" required>
+                                                 </div>
+                                                 <div class="form-group mt-3">
+                                                        <input placeholder="Your Email" type="email" class="form-control" name="email" id="email" required>
+                                                 </div>
+                                                 <div class="form-group mt-3">
+                                                        <input placeholder="Subject" type="text" class="form-control" name="subject" id="subject" required>
+                                                 </div>
+                                                 <div class="form-group mt-3">
+                                                        <textarea placeholder="Message" class="form-control" name="message" rows="5" required></textarea>
+                                                 </div>
+                                                 <div class="text-center"><button type="submit">Send Message</button></div>
+                                          </form>
+                                   </div>
+                            </div>
+                     </div>
+              </section><!-- END CONTACT SECTION -->
+
+       </main><!-- END MAIN -->
+
+       <!---------------- ======= FOOTER ======= -------------->
+       <footer id="footer">
+              <div class="container">
+                     <div class="footer-top">
+                            <div class="container">
+                                   <div class="row">
+                                          <div class="col-lg-4 col-md-6 footer-contact">
+                                                 <h3>UI-Track</h3>
+                                                 <p>
+                                                        Rizal St. <br>
+                                                        Iloilo City Proper, 5000<br>
+                                                        Philippines <br><br>
+                                                        <strong>Phone:</strong>09167383825<br>
+                                                        <strong>Email:</strong> info@example.com<br>
+                                                 </p>
+                                          </div>
+                                   
+                                          <div class="col-lg-4 col-md-6 footer-links">
+                                                 <h4>Useful Links</h4>
+                                                 <ul>
+                                                        <li><i class="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
+                                                        <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+                                                        <li><i class="bx bx-chevron-right"></i> <a href="#features">Features</a></li>
+                                                        <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+                                                 </ul>
+                                          </div>
+                                   
+                                          <div class="col-lg-4 col-md-6 footer-links">
+                                                 <h4>Our Social Networks</h4>
+                                                 <div class="social-links mt-3">
+                                                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                                 </div>
+                                          </div>
+                                   
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="container py-4 footer-bottom">
+                            <div class="copyright">
+                                   &copy; Copyright <strong><span>2023 UI-Track: PHINMA Student Performance</span></strong>. All Rights Reserved
+                            </div>
+                     </div>
+              </div>
+       </footer><!-- END FOOTER -->
+              
+
+       <!---====--- BACK TO TOP ---====--->
+       <button onclick="backTotopFunction()" id="backTotop" title="Go to top"><i class="bi bi-arrow-up"></i></button>
+
+       <!---====--- VENDOR JS FILES ---====--->
+       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+       <!---====--- TEMPLATE MAIN JS FILE ---====--->
+       <script src="assets/js/main.js"></script>
+
+       <!-----------===============- CREATE ACCOUNT MODAL -===============------------------>
+       <div id="CreateAccountModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel">
+              <div class="modal-dialog">
+                     <div id="login-Modalcontent" class="modal-content">  
+                            <div id="login-Modalheader" class="modal-header">
+                                   <h2>Create Account</h2>
+                                   <button type="button"data-bs-dismiss="modal"><i class='bx bxs-x-circle'></i></button>
+                            </div>
+              
+                            <div id="login-Modalbody" class="modal-body">
+                                   <form action="process.php" method="POST">
+                                          <div id="login-label">
+                                                 <label for="role"> Select Role </label> </br>
+                                          </div>
+                                          <div id="login-inputbox">
+                                                 <select id="role" name="role" required>
+                                                        <option value="student">Student</option>
+                                                        <option value="teacher">Teacher</option>
+                                                 </select><br>
+                                          </div>
+                                          <div id="login-label">
+                                                 <label> Full Name </label> </br>
+                                          </div>
+                                          <div id="login-inputbox">
+                                                 <input class="form-control" type="text" name="name" placeholder="Enter Full Name" required> </p>
+                                          </div>
+                                          <div id="login-label">
+                                                 <label> Username </label> </br>
+                                          </div>
+                                          <div id="login-inputbox">
+                                                 <input class="form-control" type="text" name="username" placeholder="Enter Username" required> </p>
+                                          </div>
+                                          
+                                          <!---====--- ADDITIONAL FIELDS SEPCIFIC TO TEACHERS ---====--->
+                                          <div id="teacherFields" style="display:none;">
+                                                 <div id="login-label">
+                                                        <label for="qualification"> Qualification </label> </br>
+                                                 </div>
+                                                 <div id="login-inputbox">
+                                                        <input class="form-control" type="text" id="qualification" name="qualification" placeholder="Enter Qualification" required> </p>
+                                                 </div>
+                                                 <script>
+                                                        document.getElementById('role').addEventListener('change', function () {
+                                                            var role = this.value;
+                                                            var teacherFields = document.getElementById('teacherFields');
+                                                
+                                                            if (role === 'teacher') {
+                                                                teacherFields.style.display = 'block';
+                                                            } else {
+                                                                teacherFields.style.display = 'none';
+                                                            }
+                                                        });
+                                                 </script>
+                                          </div>
+                                          <div id="login-label">
+                                                 <label> Password </label> </br>
+                                          </div>
+                                          <div id="login-inputbox">
+                                                 <input class="form-control" id="login-showpass" type="password" name="pass" placeholder="Enter Password" required> </p>
+                                          </div>
+                                          <input type="checkbox" onclick="LoginModalFunction()">&nbsp;&nbsp;Show Password
+                                          <script>
+                                          function LoginModalFunction() {
+                                          var x = document.getElementById("login-showpass");
+                                          if (x.type === "password") {
+                                                 x.type = "text";
+                                          } else {
+                                                 x.type = "password";
+                                          }
+                                          }
+                                          </script>
+                                          
+                                          <div id="login-Modalbutton">
+                                                 <input type="reset" value="Clear">
+                                                 <input type="submit" value="Log In">
+                                          </div>
+                                   </form>
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+       <!-----------===============- STUDENT LOGIN MODAL -===============------------------>
+       <div id="StudentLoginModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel">
+              <div class="modal-dialog">
+                     <div id="login-Modalcontent" class="modal-content">  
+                            <div id="login-Modalheader" class="modal-header">
+                                   <h2>Student Login</h2>
+                                   <button type="button"data-bs-dismiss="modal"><i class='bx bxs-x-circle'></i></button>
+                            </div>
+              
+                            <div id="login-Modalbody" class="modal-body">
+                                   <form action="process.php" method="POST">                         
+                                          <div id="login-label">
+                                                 <label><i class='bx bxs-user-check'></i> Username </label> </br>
+                                          </div>
+                                          <div id="login-inputbox">
+                                                 <input class="form-control" type="email" name="email" placeholder="Your Username" required> </p>
+                                          </div>
+                            
+                                          <div id="login-label">
+                                                 <label><i class='bx bx-key'></i> Password </label> </br>
+                                          </div>
+                                          <div id="login-inputbox">
+                                                 <input class="form-control" id="login-showpass" type="password" name="pass" placeholder="Your Password" required> </p>
+                                          </div>
+                            
+                                          <input type="checkbox" onclick="LoginModalFunction()">&nbsp;&nbsp;Show Password
+                                          <script>
+                                          function LoginModalFunction() {
+                                          var x = document.getElementById("login-showpass");
+                                          if (x.type === "password") {
+                                                 x.type = "text";
+                                          } else {
+                                                 x.type = "password";
+                                          }
+                                          }
+                                          </script>
+                                          
+                                          <div id="login-Modalbutton">
+                                                 <input type="reset" value="Clear">
+                                                 <input type="submit" value="Log In">
+                                          </div>
+                                   </form>
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+       <!-----------===============- TEACHER LOGIN MODAL -===============------------------
+       <div id="TeacherLoginModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel">
+              <div class="modal-dialog">
+                     <div id="login-Modalcontent" class="modal-content">  
+                            <div id="login-Modalheader" class="modal-header">
+                                   <h2>Teacher Login</h2>
+                                   <button type="button"data-bs-dismiss="modal"><i class='bx bxs-x-circle'></i></button>
+                            </div>
+              
+                            <div id="login-Modalbody" class="modal-body">
+                                   <form action="process.php" method="POST">                         
+                                          <div id="login-label">
+                                                 <label><i class='bx bxs-user-check'></i> Username </label> </br>
+                                          </div>
+                                          <div id="login-inputbox">
+                                                 <input class="form-control" type="email" name="email" placeholder="Your Username" required> </p>
+                                          </div>
+                            
+                                          <div id="login-label">
+                                                 <label><i class='bx bx-key'></i> Password </label> </br>
+                                          </div>
+                                          <div id="login-inputbox">
+                                                 <input class="form-control" id="login-showpass" type="password" name="pass" placeholder="Your Password" required> </p>
+                                          </div>
+                            
+                                          <input type="checkbox" onclick="LoginModalFunction()">&nbsp;&nbsp;Show Password
+                                          <script>
+                                          function LoginModalFunction() {
+                                          var x = document.getElementById("login-showpass");
+                                          if (x.type === "password") {
+                                                 x.type = "text";
+                                          } else {
+                                                 x.type = "password";
+                                          }
+                                          }
+                                          </script>
+                                          
+                                          <div id="login-Modalbutton">
+                                                 <input type="reset" value="Clear">
+                                                 <input type="submit" value="Log In">
+                                          </div>
+                                   </form>
+                            </div>
+                     </div>
+              </div>
+       </div>
+       --->
+
+       <!-----------===============- ADMIN LOGIN MODAL -===============------------------
+       <div id="AdminLoginModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel">
+              <div class="modal-dialog">
+                     <div id="login-Modalcontent" class="modal-content">  
+                            <div id="login-Modalheader" class="modal-header">
+                                   <h2>Admin Login</h2>
+                                   <button type="button"data-bs-dismiss="modal"><i class='bx bxs-x-circle'></i></button>
+                            </div>
+              
+                            <div id="login-Modalbody" class="modal-body">
+                                   <form action="process.php" method="POST">                         
+                                          <div id="login-label">
+                                                 <label><i class='bx bxs-user-check'></i> Username </label> </br>
+                                          </div>
+                                          <div id="login-inputbox">
+                                                 <input class="form-control" type="email" name="email" placeholder="Your Username" required> </p>
+                                          </div>
+                            
+                                          <div id="login-label">
+                                                 <label><i class='bx bx-key'></i> Password </label> </br>
+                                          </div>
+                                          <div id="login-inputbox">
+                                                 <input class="form-control" id="login-showpass" type="password" name="pass" placeholder="Your Password" required> </p>
+                                          </div>
+                            
+                                          <input type="checkbox" onclick="LoginModalFunction()">&nbsp;&nbsp;Show Password
+                                          <script>
+                                          function LoginModalFunction() {
+                                          var x = document.getElementById("login-showpass");
+                                          if (x.type === "password") {
+                                                 x.type = "text";
+                                          } else {
+                                                 x.type = "password";
+                                          }
+                                          }
+                                          </script>
+                                          
+                                          <div id="login-Modalbutton">
+                                                 <input type="reset" value="Clear">
+                                                 <input type="submit" value="Log In">
+                                          </div>
+                                   </form>
+                            </div>
+                     </div>
+              </div>
+       </div>
+       -->
+</body>
+</html>
